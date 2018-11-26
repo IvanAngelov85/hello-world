@@ -1,0 +1,907 @@
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+}
+
+
+body{
+    background-color: #ffffff;
+}
+.bx-wrapper{
+    margin-bottom: 90px;
+}
+#site-wrap{
+    width:100%;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+#site-wrap img{
+    background-size: cover;
+    display: block;
+    width: 400px;
+}
+#site-wrap{
+    width:80%;
+    margin:0 auto;
+}
+.csw{
+    width:100%;
+    color: #f4eade;
+    font-weight:300;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*main header*/
+#main-header{
+    background-color: #ffffff;
+
+
+    height: 86px;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    padding-top:15px;
+    box-sizing: border-box;
+    padding:0;
+}
+#main-logo{
+    display: block;
+    background: url(../img/logo1.png);
+    width: 90px;
+    height: 90px;
+    float: left;
+    border: none;
+    opacity: 0.8;
+}
+#main-logo:hover{
+    animation: shake .2s ease-in-out;
+}
+#main-menu{
+    float: right;
+}
+#main-menu ul{
+    list-style: none;
+    padding:0;
+    margin: 0;
+
+}
+#main-menu ul li{
+    font-size:1.3em;
+    float: left;
+    padding-top: 21px;
+}
+#main-menu ul:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#main-menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 10px 22px;
+}
+#main-menu ul li a:hover{
+    color: #3b5998;
+    transition: .5s;
+    animation: shake .2s ease-in-out;
+}
+
+h1 {
+    float: left;
+    color: #4f5d7c;
+    margin-top: 22px;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: "Bradley Hand ITC";
+    margin-left: 22px;
+}
+h2 {
+    color: #000000;
+    margin-top: 22px;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-2px);
+    }
+
+    40% {
+        transform: translateX(2px);
+    }
+
+    60% {
+        transform: translateX(-2px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+#main-menu ul li.selected a{
+    color: #4f5d7c;
+}
+
+#main-menu-toggle{
+    font-size:26px;
+    color: #3b5998;
+    float: right;
+    display: none;
+}
+#main-menu-toggle:active{
+    color: #3b5998;
+}
+#header-placeholder{
+    height: 4px;
+
+}
+.selected{
+    color: #3b5998;
+}
+.container.shadow{
+    box-shadow: 2px 1px 20px 5px black;
+}
+.csw.shadow{
+    box-shadow: 0 0 10px 3px black;
+}
+.text:hover{
+    transform: scale(1.25, 1.25);
+    transition: 1s;
+    opacity: 1;
+}
+
+
+.container h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white;
+    font-size:1.4em;
+}
+.container h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #ffffff;
+    font-size:2.4em;
+}
+
+.yoghurt{
+    width:100%;
+}
+.slider div{
+    background-color: rgba(62, 99, 146, 0.8);
+}
+.slider div .text1{
+    position: absolute;
+    left:260px;
+    padding-top:10px;
+    font-size:1.1em;
+}
+.slider div p{
+    font-size:1em;
+}
+.slider h2{
+    background-color: #2f5b86;
+    padding: 20px 20px 20px 20px;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+h2 img{
+    width: 100%;
+}
+div.text{
+    width:79.25%;
+    position: absolute;
+    font-size:1.2em;
+    text-align: center;
+    color: white;
+    background-color: rgba(49, 40, 43, 0.6);
+    margin: 12% 5% 5% 10.36%;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 3px black;
+    display: block;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+
+}
+
+ .weight{
+     font-weight:800;
+ }
+ .container{
+     margin-bottom: 15px;
+ }
+ .col-md-5{
+     margin-bottom:30px;
+ }
+ .col-md-6{
+     margin-bottom: 30px;
+ }
+
+.col-md-12 h2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.col-md-12 h2{
+    color: white;
+    padding-top: 20px;
+    text-shadow: 0 0 10px white;
+}
+.col-md-12 h2 a:hover{
+   text-shadow: 2px 2px 20px black;
+}
+.video{
+    margin:0 auto;
+}
+.video:hover{
+    transform: scale(1.14, 1.14);
+    transition: 0.5s;
+}
+
+#hero-pic{
+    background-image: url("../img/room4.jpg");
+    height: 400px;
+}
+
+#inside{
+    background-color: rgba(79, 93, 124, 0.6);
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+.col-md-3:hover #inside{
+    display: block;
+}
+.col-md-3 #inside:hover{
+    opacity: 0.9;
+    width: 100%;
+
+}
+
+#hidden{
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.col-md-3.pic1{
+    background-image: url("../img/ap1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0 ;
+    height: 112px;
+    width: 100%;
+    margin-right: 103px;
+    margin-bottom: 50px;
+}
+.col-md-3#ap1{
+    background-image: url("../img/ap1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0 ;
+    height: 112px;
+    width: 100%;
+    margin-right: 103px;
+    margin-bottom: 50px;
+}
+.col-md-3#ap2{
+    background-image: url("../img/ap2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0 ;
+    height: 112px;
+    width: 100%;
+    margin-right: 103px;
+    margin-bottom: 50px;
+}
+.col-md-3#ap3{
+    background-image: url("../img/ap3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0 ;
+    height: 112px;
+    width: 100%;
+    margin-right: 103px;
+    margin-bottom: 50px;
+}
+
+h2.img{
+    width:50%;
+}
+.col-md-6 img{
+    width: 100%;
+    box-shadow: 0 0 20px 2px black;
+}
+
+.heroimg{
+    width:100%;
+    margin-bottom:50px;
+}
+div.hid{
+
+    color: #f4eade;
+    font-weight:300;
+    text-align: center;
+    margin-bottom:50px;
+    background-color: rgba(3, 57, 108, 0.8);
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.img{
+    width: 100%;
+}
+#scroll-to-top-btn{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    display: none;
+    background: transparent url("../img/fingerup1.png");
+    background-size: cover;
+    border: hidden;
+    opacity: 0.5;
+}
+#scroll-to-top-btn:hover{
+    opacity: 1;
+}
+.coffee{
+    margin-top: 50px;
+}
+.row-fluid{
+    margin-top: 130px;
+}
+.submit-contacts{
+    color: black;
+}
+.col-md-4.bordered{
+    border-right: 1px solid grey;
+    margin-bottom: 20px;
+}
+.col-md-8.margin{
+    margin-top:20px;
+}
+.projects{
+    margin-left:18px;
+}
+.footer-bs {
+    background-color: #4f5d7c;
+    padding: 60px 40px;
+    color: rgba(255,255,255,1.00);
+    margin-bottom: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+    .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+@media only screen and (max-width: 1366px){
+    div #photos{
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    div #photos{
+        height: 300px;
+    }
+    iframe{
+        width: 300px;
+        height: 150px;
+    }
+    .slider div.text1{
+        font-size: 0.9em;
+    }
+}
+@media only screen and (max-width: 600px){
+    div #photos{
+        height: 200px;
+    }
+}
+.fab{
+    font-size:4em;
+    margin:15px;
+}
+
+.fas{
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 980px) {
+    .csw{
+        width:auto;
+        padding:0 15px;
+    }
+    div.text{
+        width: 100%;
+        margin:16% 0 0 0;
+    }
+}
+@media only screen and (max-width: 800px){
+
+
+    div.text{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #main-header {
+        padding-top: 10px;
+        height: 100px;
+    }
+
+    #main-logo {
+        float: none;
+        margin: 0 auto 0;
+    }
+
+    #main-menu {
+        float: none;
+        text-align: center;
+    }
+
+    #main-menu ul {
+        display: inline-block;
+        margin-left: 45px;
+    }
+
+    #main-menu ul li a {
+        padding: 10px 12px;
+    }
+
+    #header-placeholder {
+        height: 140px;
+    }
+}
+    @media only screen and (max-width: 683px) {
+        #main-menu ul li a {
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        #header-placeholder {
+            height: 435px;
+        }
+        .text1 {
+            display: none;
+        }
+
+        #main-menu {
+            display: none;
+        }
+
+        #main-menu ul li {
+            float: none;
+        }
+
+        #main-menu-toggle {
+            display: inline-block;
+        }
+    }
+    @media only screen and (min-width: 683px) {
+        #main-menu {
+            display: block !important;
+        }
+
+    }
+
+
+
+
+
+    /* ==========================================================================
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       http://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
+    @media print {
+        *,
+        *:before,
+        *:after {
+            background: transparent !important;
+            color: #000 !important;
+            /* Black prints faster:
+                                              http://www.sanbeiji.com/archives/953 */
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+
+        /*
+         * Don't show links that are fragment identifiers,
+         * or use the `javascript:` pseudo protocol
+         */
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+
+        pre {
+            white-space: pre-wrap !important;
+        }
+
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+
+        /*
+         * Printing Tables:
+         * http://css-discuss.incutio.com/wiki/Printing_Tables
+         */
+        thead {
+            display: table-header-group;
+        }
+
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
+.projects-filter{
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom:30px;
+}
+.projects-filter ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.projects-filter ul li{
+    float: left;
+}
+.projects-filter ul li:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.projects-filter ul li a{
+    display: block;
+    text-decoration: none;
+    color: #dfe3ee;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding:10px 22px;
+    transition: all .2s;
+}
+.projects-filter ul li a:hover{
+    color: black;
+    transform: translateY(-2px);
+}
+.projects-filter ul li:before{
+    display: block;
+    float: right;
+    content: '';
+    width: 1px;
+    height: 28px;
+    background: #e1e1e1;
+    transform: rotate(20deg);
+    margin-top: 5px;
+}
+.projects-filter ul li:last-child:before{
+    display: none;
+}
+
+/*projects list*/
+
+.project-item{
+    float: left;
+    width: 32%;
+    margin-bottom: 2%;
+}
+.project-item a{
+    display: block;
+}
+.project-item a img{
+    display: block;
+    width: 100%;
+}
+.grid-sizer{
+    width: 33.33%;
+}
+
