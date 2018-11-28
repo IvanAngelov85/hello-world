@@ -118,7 +118,6 @@ body{
 #site-wrap img{
     background-size: cover;
     display: block;
-    width: 400px;
 }
 #site-wrap{
     width:80%;
@@ -401,33 +400,33 @@ div.text{
 }
 .col-md-3#ap1{
     background-image: url("../img/ap1.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 0 ;
-    height: 112px;
+    height: 170px;
     width: 100%;
-    margin-right: 103px;
-    margin-bottom: 50px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 .col-md-3#ap2{
     background-image: url("../img/ap2.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 0 ;
-    height: 112px;
+    height: 170px;
     width: 100%;
-    margin-right: 103px;
-    margin-bottom: 50px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 .col-md-3#ap3{
     background-image: url("../img/ap3.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 0 ;
-    height: 112px;
+    height: 170px;
     width: 100%;
-    margin-right: 103px;
-    margin-bottom: 50px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 h2.img{
@@ -863,7 +862,7 @@ div.hid{
 .projects-filter ul li a{
     display: block;
     text-decoration: none;
-    color: #dfe3ee;
+    color: #222831;
     font-weight:bold;
     text-transform: uppercase;
     padding:10px 22px;
